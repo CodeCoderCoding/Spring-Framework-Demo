@@ -4,18 +4,18 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Person {
-    private String name;
+    private String nameString;
 
-    public Person(String name) {
-        this.name = name;
+    public Person(String nameString) {
+        this.nameString = nameString;
     }
 
-    public String getName() {
-        return name;
+    public String getName1() {
+        return nameString;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNameString(String nameString) {
+        this.nameString = nameString;
     }
 
 }

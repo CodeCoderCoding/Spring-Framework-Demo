@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="student" class="com.supremepole.springfactorybean.Dog">
+        <property name="dogName" value="little-yellow" />
+    </bean>
+
+    <bean id="school" class="com.supremepole.springfactorybean.Cat">
+    </bean>
+
+    <bean id="factoryBeanPojo" class="com.supremepole.springfactorybean.FactoryBeanPojo">
+        <property name="type" value="dog" />
+    </bean>
+
+</beans>
