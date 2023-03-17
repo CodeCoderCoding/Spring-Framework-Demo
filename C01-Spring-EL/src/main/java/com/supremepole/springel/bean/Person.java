@@ -1,4 +1,4 @@
-package com.supremepole.springel;
+package com.supremepole.springel.bean;
 
 import org.springframework.stereotype.Component;
 
