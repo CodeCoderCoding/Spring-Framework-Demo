@@ -1,7 +1,6 @@
 package com.supremepole.springel.springel;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.beans.factory.config.BeanExpressionContext;
 
 
 /**
@@ -12,8 +11,19 @@ public class SpringELBean {
     @Value("#{dog.getString()}")
     private String string;
 
+    // 注入其他bean的属性
+    @Value("#{person.name}")
+    private String personName;
+
+    // 注入其他bean的属性，和上面的写法等价
+    @Value("#{person['name1']}")
+    private String personName1;
+
+
     public void output(){
         System.out.println(string);
+        System.out.println(personName);
+        System.out.println(personName1);
     }
 
 }

@@ -14,6 +14,10 @@ public class Person {
         return nameString;
     }
 
+    public String getName(){
+        return nameString;
+    }
+
     public void setNameString(String nameString) {
         this.nameString = nameString;
     }
