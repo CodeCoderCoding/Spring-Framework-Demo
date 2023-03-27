@@ -9,6 +9,7 @@ public class SpringELgetObject {
     @Value("#{#this.toString()}")
     private String string;
 
+    // getObject()方法是BeanExpressionContext的方法
     @Value("#{getObject('person')}")
     private Object objectPerson;
 
