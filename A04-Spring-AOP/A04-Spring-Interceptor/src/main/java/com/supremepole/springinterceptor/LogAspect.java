@@ -20,7 +20,7 @@ public class LogAspect {
     /**
      * // 通过@Pointcut注解声明切点。
      */
-    @Pointcut("@annotation(com.supremepole.f03springinterceptor.Action)")
+    @Pointcut("@annotation(com.supremepole.springinterceptor.Action)")
     public void annotationPointCut() {
     }
 
@@ -41,7 +41,7 @@ public class LogAspect {
      * // 通过@Before注解声明一个建言，此建言直接使用拦截规则作为参数。
      * @param joinPoint
      */
-    @Before("execution(* com.supremepole.f03springinterceptor.DemoMethodService.*(..))")
+    @Before("execution(* com.supremepole.springinterceptor.DemoMethodService.*(..))")
     public void before(JoinPoint joinPoint) {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();
